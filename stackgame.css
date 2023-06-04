@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 body {
@@ -34,7 +35,6 @@ body {
 
 #game_frame p {
     border: 1px solid black;
-    text-align: center;
     background-color: white;
     border-radius: 5px;
 }
