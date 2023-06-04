@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#controls_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#game_frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 140);
+    border-radius: 5px;
+    width: 50%;
+    padding: 2%;
+
+}
+
+#game_frame p {
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.game_condition {
+    display: none;
+}
