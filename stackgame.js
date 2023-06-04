@@ -8,7 +8,7 @@ var game_frame = document.getElementById("game_frame");
 
 var you_lost = document.getElementById("You_lost")
 var you_won = document.getElementById("You_won")
-var old_number = [], block_number = 0, p, undo_attempts = 3, lost = false, won = false;
+var old_number = [], block_number = 0, p, undo_attempts = 5, lost = false, won = false;
 var max = 120, min = 20;
 lives_count.innerText = `${undo_attempts} ♥`;
 build.addEventListener("click", function () {
@@ -60,7 +60,7 @@ undo.addEventListener("click", function () {
 function play_again() {
 
     if (confirm("Play Again?") == true) {
-        undo_attempts = 3; game_frame.innerHTML = ""; lost = false; old_number = []; block_number = 0;
+        undo_attempts = 5; game_frame.innerHTML = ""; lost = false; old_number = []; block_number = 0;
         you_lost.style.display = "none";
         you_won.style.display = "none";
         lives_count.innerText = `${undo_attempts} ♥`
