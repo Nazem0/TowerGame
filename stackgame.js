@@ -53,6 +53,7 @@ undo.addEventListener("click", function () {
         undo_attempts--;
         lives_count.innerText = `${undo_attempts} ♥`
         lost = false;
+        won = false;
     }
 
 });
