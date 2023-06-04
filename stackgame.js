@@ -16,6 +16,8 @@ build.addEventListener("click", function () {
     if (lost == true || won == true) {
         return;
     }
+    var pop=new Audio("./assets/audio/pop.mp3");
+    pop.play();
     p = document.createElement("p");
     var random_number = Math.floor(Math.random() * (max - min + 1) + min);
     p.innerText = random_number;
@@ -36,6 +38,8 @@ function check_status() {
     if (block_number == 4 && lost == false) {
         you_won.style.display = "block";
         won=true;
+        var yay=new Audio("./assets/audio/yay.mp3");
+        yay.play();
         return;
     }
 }
