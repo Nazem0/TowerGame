@@ -61,7 +61,7 @@ undo.addEventListener("click", function () {
 function play_again() {
 
     if (confirm("Play Again?") == true) {
-        undo_attempts = 5; game_frame.innerHTML = ""; lost = false; old_number = []; block_number = 0;
+        undo_attempts = 5, game_frame.innerHTML = "", lost = false, won = false, old_number = [], block_number = 0;
         you_lost.style.display = "none";
         you_won.style.display = "none";
         lives_count.innerText = `${undo_attempts} ♥`
