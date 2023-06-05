@@ -78,6 +78,7 @@ function play_again() {
     undo_attempts = 5, game_frame.innerHTML = "", lost = false, won = false, old_number = [], block_number = 0;
     you_lost.style.display = "none";
     you_won.style.display = "none";
+    try_again.style.display = "none";
     lives_count.innerText = `${undo_attempts} ♥`
     return;
 }
