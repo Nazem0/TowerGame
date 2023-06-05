@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tower Game</title>
-    <link rel="stylesheet" href="assets/css/stackgame.css">
+    <link rel="stylesheet" href="assets/css/game_style.css">
 </head>
 
 <body>
     <div id="controls_frame">
         <h3>Build a four blocks tower to win the game!</h3>
         <p id="lives_count"></p>
+        <button onclick="play_again()">NEW GAME</button>
         <button id="build">BUILD</button>
         <button id="undo">UNDO</button>
     </div>
     <div id="game_frame"></div>
+    <h3 class="game_condition" id="Try_again">Try Again! 😐</h3>
     <h3 class="game_condition" id="You_lost">You Lost 😓</h3>
-    <h3 class="game_condition" id="You_won">You Won!🎉</h3>
+    <h3 class="game_condition" id="You_won">You Won! 🎉</h3>
 </body>
-<script src="assets/js/stackgame.js"></script>
+<script src="assets/js/game_script.js"></script>
 </html>
