@@ -24,7 +24,9 @@ body {
 
 #controls_frame>button{
     width:10vw;
+    min-width:fit-content;
     margin:2px;
+    padding:2px;
 }
 
 #game_frame {
