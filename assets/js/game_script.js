@@ -18,7 +18,7 @@ build.addEventListener("click", function () {
     pop.play();
     p = document.createElement("p");
     var random_number = Math.floor(Math.random() * (max - min + 1) + min);
-//     p.innerText = random_number;
+    p.innerText = random_number;
     p.setAttribute("style", "width:" + random_number + "px;");
     p.setAttribute("id", "p" + block_number)
     game_frame.appendChild(p);
